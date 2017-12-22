@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schillings.SwordPhish.Shared", "Schillings.SwordPhish.Shared\Schillings.SwordPhish.Shared.csproj", "{A8982796-15DB-4A6F-ADCA-6FCD30FA4151}"
 EndProject
@@ -10,6 +10,12 @@ EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Schillings.SwordPhish.Installer", "Schillings.SwordPhish.Installer\Schillings.SwordPhish.Installer.wixproj", "{30110E93-6E58-4F9B-97DB-3503D5B2CEA7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schillings.SwordPhish.Installer.OptionsCustomAction", "Schillings.SwordPhish.Installer.OptionsCustomAction\Schillings.SwordPhish.Installer.OptionsCustomAction.csproj", "{2D50BAE9-F112-437A-9D5F-99B852D3E023}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4FBAE3BE-1274-4294-8BC5-CB7E73FF5957}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,22 +111,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 5
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://schillings.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Schillings.SwordPhish.Shared\\Schillings.SwordPhish.Shared.csproj
-		SccProjectName1 = Schillings.SwordPhish.Shared
-		SccLocalPath1 = Schillings.SwordPhish.Shared
-		SccProjectUniqueName2 = Schillings.SwordPhish\\Schillings.SwordPhish.csproj
-		SccProjectName2 = Schillings.SwordPhish
-		SccLocalPath2 = Schillings.SwordPhish
-		SccProjectUniqueName3 = Schillings.SwordPhish.Installer\\Schillings.SwordPhish.Installer.wixproj
-		SccProjectName3 = Schillings.SwordPhish.Installer
-		SccLocalPath3 = Schillings.SwordPhish.Installer
-		SccProjectUniqueName4 = Schillings.SwordPhish.Installer.OptionsCustomAction\\Schillings.SwordPhish.Installer.OptionsCustomAction.csproj
-		SccProjectName4 = Schillings.SwordPhish.Installer.OptionsCustomAction
-		SccLocalPath4 = Schillings.SwordPhish.Installer.OptionsCustomAction
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79DB195F-4004-4FFE-A1F6-629344BE27FF}
 	EndGlobalSection
 EndGlobal

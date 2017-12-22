@@ -1,6 +1,0 @@
-C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish\bin\Release\Schillings.SwordPhish.dll
-C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish.Shared\bin\Release\Schillings.SwordPhish.Shared.dll
-C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish\bin\Release\Schillings.SwordPhish.dll.manifest
-C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
-C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish\bin\Release\Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll
-C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish\bin\Release\Schillings.SwordPhish.vsto

@@ -1,7 +1,0 @@
-C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish.Installer\bin\Release\Schillings.SwordPhish.Installer.msi
-C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish.Installer\bin\Release\Schillings.SwordPhish.Installer.wixpdb
-obj\Release\Product.wixobj
-obj\Release\Schillings.SwordPhish.Installer.wixproj.BindContentsFileListnull.txt
-obj\Release\Schillings.SwordPhish.Installer.wixproj.BindOutputsFileListnull.txt
-obj\Release\Schillings.SwordPhish.Installer.wixproj.BindBuiltOutputsFileListnull.txt
-obj\Release\OptionsDialog.wixobj
