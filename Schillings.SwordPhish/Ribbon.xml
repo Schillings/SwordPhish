@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI onLoad="Ribbon_Load" xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+    <ribbon>
+        <tabs>
+            <tab idMso="TabMail">
+                <group id="groupMailSwordPhish" insertBeforeMso="GroupMailDelete" getLabel="GetGroupLabel">
+                    <button id="buttonMailReport" onAction="ReportMailItem" getEnabled="GetButtonEnabled" getLabel="GetButtonLabel" getSupertip="GetButtonSuperTip" getImage="GetButtonImage" size="large" />
+                </group>
+            </tab>
+            <tab idMso="TabReadMessage">
+                <group id="groupReadSwordPhish" insertBeforeMso="GroupMailDelete" getLabel="GetGroupLabel">
+                    <button id="buttonReadReport" onAction="ReportMailItem" getEnabled="GetButtonEnabled" getLabel="GetButtonLabel" getSupertip="GetButtonSuperTip" getImage="GetButtonImage" size="large" />
+                </group>
+            </tab>
+        </tabs>
+    </ribbon>
+</customUI>

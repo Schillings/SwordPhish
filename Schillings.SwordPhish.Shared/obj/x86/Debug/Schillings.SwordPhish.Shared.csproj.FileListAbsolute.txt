@@ -1,0 +1,6 @@
+C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish.Shared\bin\x86\Debug\Schillings.SwordPhish.Shared.dll
+C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish.Shared\bin\x86\Debug\Schillings.SwordPhish.Shared.pdb
+C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish.Shared\obj\x86\Debug\Schillings.SwordPhish.Shared.Properties.Resources.resources
+C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish.Shared\obj\x86\Debug\Schillings.SwordPhish.Shared.csproj.GenerateResource.Cache
+C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish.Shared\obj\x86\Debug\Schillings.SwordPhish.Shared.dll
+C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish.Shared\obj\x86\Debug\Schillings.SwordPhish.Shared.pdb

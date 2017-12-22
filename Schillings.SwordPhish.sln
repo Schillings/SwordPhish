@@ -1,0 +1,126 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schillings.SwordPhish.Shared", "Schillings.SwordPhish.Shared\Schillings.SwordPhish.Shared.csproj", "{A8982796-15DB-4A6F-ADCA-6FCD30FA4151}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schillings.SwordPhish", "Schillings.SwordPhish\Schillings.SwordPhish.csproj", "{8360C294-42A7-4B7A-A5A0-1301D577049B}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Schillings.SwordPhish.Installer", "Schillings.SwordPhish.Installer\Schillings.SwordPhish.Installer.wixproj", "{30110E93-6E58-4F9B-97DB-3503D5B2CEA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schillings.SwordPhish.Installer.OptionsCustomAction", "Schillings.SwordPhish.Installer.OptionsCustomAction\Schillings.SwordPhish.Installer.OptionsCustomAction.csproj", "{2D50BAE9-F112-437A-9D5F-99B852D3E023}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		CD_ROM|x86 = CD_ROM|x86
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		DVD-5|Any CPU = DVD-5|Any CPU
+		DVD-5|x86 = DVD-5|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+		SingleImage|Any CPU = SingleImage|Any CPU
+		SingleImage|x86 = SingleImage|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8982796-15DB-4A6F-ADCA-6FCD30FA4151}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{A8982796-15DB-4A6F-ADCA-6FCD30FA4151}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{A8982796-15DB-4A6F-ADCA-6FCD30FA4151}.CD_ROM|x86.ActiveCfg = Debug|Any CPU
+		{A8982796-15DB-4A6F-ADCA-6FCD30FA4151}.CD_ROM|x86.Build.0 = Debug|Any CPU
+		{A8982796-15DB-4A6F-ADCA-6FCD30FA4151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8982796-15DB-4A6F-ADCA-6FCD30FA4151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8982796-15DB-4A6F-ADCA-6FCD30FA4151}.Debug|x86.ActiveCfg = Debug|x86
+		{A8982796-15DB-4A6F-ADCA-6FCD30FA4151}.Debug|x86.Build.0 = Debug|x86
+		{A8982796-15DB-4A6F-ADCA-6FCD30FA4151}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8982796-15DB-4A6F-ADCA-6FCD30FA4151}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{A8982796-15DB-4A6F-ADCA-6FCD30FA4151}.DVD-5|x86.ActiveCfg = Debug|Any CPU
+		{A8982796-15DB-4A6F-ADCA-6FCD30FA4151}.DVD-5|x86.Build.0 = Debug|Any CPU
+		{A8982796-15DB-4A6F-ADCA-6FCD30FA4151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8982796-15DB-4A6F-ADCA-6FCD30FA4151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8982796-15DB-4A6F-ADCA-6FCD30FA4151}.Release|x86.ActiveCfg = Release|Any CPU
+		{A8982796-15DB-4A6F-ADCA-6FCD30FA4151}.Release|x86.Build.0 = Release|Any CPU
+		{A8982796-15DB-4A6F-ADCA-6FCD30FA4151}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{A8982796-15DB-4A6F-ADCA-6FCD30FA4151}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{A8982796-15DB-4A6F-ADCA-6FCD30FA4151}.SingleImage|x86.ActiveCfg = Debug|Any CPU
+		{A8982796-15DB-4A6F-ADCA-6FCD30FA4151}.SingleImage|x86.Build.0 = Debug|Any CPU
+		{8360C294-42A7-4B7A-A5A0-1301D577049B}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{8360C294-42A7-4B7A-A5A0-1301D577049B}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{8360C294-42A7-4B7A-A5A0-1301D577049B}.CD_ROM|x86.ActiveCfg = Debug|Any CPU
+		{8360C294-42A7-4B7A-A5A0-1301D577049B}.CD_ROM|x86.Build.0 = Debug|Any CPU
+		{8360C294-42A7-4B7A-A5A0-1301D577049B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8360C294-42A7-4B7A-A5A0-1301D577049B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8360C294-42A7-4B7A-A5A0-1301D577049B}.Debug|x86.ActiveCfg = Debug|x86
+		{8360C294-42A7-4B7A-A5A0-1301D577049B}.Debug|x86.Build.0 = Debug|x86
+		{8360C294-42A7-4B7A-A5A0-1301D577049B}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{8360C294-42A7-4B7A-A5A0-1301D577049B}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{8360C294-42A7-4B7A-A5A0-1301D577049B}.DVD-5|x86.ActiveCfg = Debug|Any CPU
+		{8360C294-42A7-4B7A-A5A0-1301D577049B}.DVD-5|x86.Build.0 = Debug|Any CPU
+		{8360C294-42A7-4B7A-A5A0-1301D577049B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8360C294-42A7-4B7A-A5A0-1301D577049B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8360C294-42A7-4B7A-A5A0-1301D577049B}.Release|x86.ActiveCfg = Release|Any CPU
+		{8360C294-42A7-4B7A-A5A0-1301D577049B}.Release|x86.Build.0 = Release|Any CPU
+		{8360C294-42A7-4B7A-A5A0-1301D577049B}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{8360C294-42A7-4B7A-A5A0-1301D577049B}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{8360C294-42A7-4B7A-A5A0-1301D577049B}.SingleImage|x86.ActiveCfg = Debug|Any CPU
+		{8360C294-42A7-4B7A-A5A0-1301D577049B}.SingleImage|x86.Build.0 = Debug|Any CPU
+		{30110E93-6E58-4F9B-97DB-3503D5B2CEA7}.CD_ROM|Any CPU.ActiveCfg = Release|x86
+		{30110E93-6E58-4F9B-97DB-3503D5B2CEA7}.CD_ROM|Any CPU.Build.0 = Release|x86
+		{30110E93-6E58-4F9B-97DB-3503D5B2CEA7}.CD_ROM|x86.ActiveCfg = Release|x86
+		{30110E93-6E58-4F9B-97DB-3503D5B2CEA7}.CD_ROM|x86.Build.0 = Release|x86
+		{30110E93-6E58-4F9B-97DB-3503D5B2CEA7}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{30110E93-6E58-4F9B-97DB-3503D5B2CEA7}.Debug|x86.ActiveCfg = Debug|x86
+		{30110E93-6E58-4F9B-97DB-3503D5B2CEA7}.Debug|x86.Build.0 = Debug|x86
+		{30110E93-6E58-4F9B-97DB-3503D5B2CEA7}.DVD-5|Any CPU.ActiveCfg = Release|x86
+		{30110E93-6E58-4F9B-97DB-3503D5B2CEA7}.DVD-5|Any CPU.Build.0 = Release|x86
+		{30110E93-6E58-4F9B-97DB-3503D5B2CEA7}.DVD-5|x86.ActiveCfg = Debug|x86
+		{30110E93-6E58-4F9B-97DB-3503D5B2CEA7}.DVD-5|x86.Build.0 = Debug|x86
+		{30110E93-6E58-4F9B-97DB-3503D5B2CEA7}.Release|Any CPU.ActiveCfg = Release|x86
+		{30110E93-6E58-4F9B-97DB-3503D5B2CEA7}.Release|x86.ActiveCfg = Release|x86
+		{30110E93-6E58-4F9B-97DB-3503D5B2CEA7}.Release|x86.Build.0 = Release|x86
+		{30110E93-6E58-4F9B-97DB-3503D5B2CEA7}.SingleImage|Any CPU.ActiveCfg = Release|x86
+		{30110E93-6E58-4F9B-97DB-3503D5B2CEA7}.SingleImage|Any CPU.Build.0 = Release|x86
+		{30110E93-6E58-4F9B-97DB-3503D5B2CEA7}.SingleImage|x86.ActiveCfg = Release|x86
+		{30110E93-6E58-4F9B-97DB-3503D5B2CEA7}.SingleImage|x86.Build.0 = Release|x86
+		{2D50BAE9-F112-437A-9D5F-99B852D3E023}.CD_ROM|Any CPU.ActiveCfg = Release|x86
+		{2D50BAE9-F112-437A-9D5F-99B852D3E023}.CD_ROM|Any CPU.Build.0 = Release|x86
+		{2D50BAE9-F112-437A-9D5F-99B852D3E023}.CD_ROM|x86.ActiveCfg = Release|x86
+		{2D50BAE9-F112-437A-9D5F-99B852D3E023}.CD_ROM|x86.Build.0 = Release|x86
+		{2D50BAE9-F112-437A-9D5F-99B852D3E023}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{2D50BAE9-F112-437A-9D5F-99B852D3E023}.Debug|x86.ActiveCfg = Debug|x86
+		{2D50BAE9-F112-437A-9D5F-99B852D3E023}.Debug|x86.Build.0 = Debug|x86
+		{2D50BAE9-F112-437A-9D5F-99B852D3E023}.DVD-5|Any CPU.ActiveCfg = Release|x86
+		{2D50BAE9-F112-437A-9D5F-99B852D3E023}.DVD-5|Any CPU.Build.0 = Release|x86
+		{2D50BAE9-F112-437A-9D5F-99B852D3E023}.DVD-5|x86.ActiveCfg = Debug|x86
+		{2D50BAE9-F112-437A-9D5F-99B852D3E023}.DVD-5|x86.Build.0 = Debug|x86
+		{2D50BAE9-F112-437A-9D5F-99B852D3E023}.Release|Any CPU.ActiveCfg = Release|x86
+		{2D50BAE9-F112-437A-9D5F-99B852D3E023}.Release|x86.ActiveCfg = Release|x86
+		{2D50BAE9-F112-437A-9D5F-99B852D3E023}.Release|x86.Build.0 = Release|x86
+		{2D50BAE9-F112-437A-9D5F-99B852D3E023}.SingleImage|Any CPU.ActiveCfg = Release|x86
+		{2D50BAE9-F112-437A-9D5F-99B852D3E023}.SingleImage|Any CPU.Build.0 = Release|x86
+		{2D50BAE9-F112-437A-9D5F-99B852D3E023}.SingleImage|x86.ActiveCfg = Release|x86
+		{2D50BAE9-F112-437A-9D5F-99B852D3E023}.SingleImage|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://schillings.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Schillings.SwordPhish.Shared\\Schillings.SwordPhish.Shared.csproj
+		SccProjectName1 = Schillings.SwordPhish.Shared
+		SccLocalPath1 = Schillings.SwordPhish.Shared
+		SccProjectUniqueName2 = Schillings.SwordPhish\\Schillings.SwordPhish.csproj
+		SccProjectName2 = Schillings.SwordPhish
+		SccLocalPath2 = Schillings.SwordPhish
+		SccProjectUniqueName3 = Schillings.SwordPhish.Installer\\Schillings.SwordPhish.Installer.wixproj
+		SccProjectName3 = Schillings.SwordPhish.Installer
+		SccLocalPath3 = Schillings.SwordPhish.Installer
+		SccProjectUniqueName4 = Schillings.SwordPhish.Installer.OptionsCustomAction\\Schillings.SwordPhish.Installer.OptionsCustomAction.csproj
+		SccProjectName4 = Schillings.SwordPhish.Installer.OptionsCustomAction
+		SccLocalPath4 = Schillings.SwordPhish.Installer.OptionsCustomAction
+	EndGlobalSection
+EndGlobal

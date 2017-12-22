@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <Property Id="RECIPIENTPROPERTY" Secure="yes" />
+    <Property Id="SUBJECTPROPERTY" Secure="yes" Value="SwordPhish Report" />
+    <Property Id="ACTIONPROPERTY" Secure="yes">0</Property>
+
+    <UI Id="OptionsDialogUI">
+      <Dialog Id="OptionsDialog" Width="370" Height="270" Title="SwordPhish Options">
+        <Control Id="Next" Type="PushButton" Text="!(loc.WixUINext)" X="236" Y="243" Width="56" Height="17" Default="yes">
+          <Publish Event="DoAction" Value="OptionsCustomAction">1</Publish>
+          <Publish Event="NewDialog" Value="InstallDirDlg">1</Publish>
+        </Control>
+        <Control Id="Back" Type="PushButton" Text="!(loc.WixUIBack)" X="180" Y="243" Width="56" Height="17">
+          <Publish Event="NewDialog" Value="WelcomeDlg" />
+        </Control>
+        <Control Id="Cancel" Type="PushButton" X="304" Y="243" Width="56" Height="17" Cancel="yes" Text="!(loc.WixUICancel)">
+          <Publish Event="SpawnDialog" Value="CancelDlg">1</Publish>
+        </Control>
+
+        <Control Id="Title" Type="Text" X="15" Y="6" Width="200" Height="15" Transparent="yes" NoPrefix="yes" Text="{\WixUI_Font_Title}Configure Options " />
+        <Control Id="Description" Type="Text" X="25" Y="23" Width="280" Height="15" Transparent="yes" NoPrefix="yes" Text="Configure how you want SwordPhish to report." />
+        <Control Id="BannerBitmap" Type="Bitmap" X="0" Y="0" Width="370" Height="44" TabSkip="no" Text="!(loc.InstallDirDlgBannerBitmap)" />
+        <Control Id="BannerLine" Type="Line" X="0" Y="44" Width="370" Height="0" />
+        <Control Id="BottomLine" Type="Line" X="0" Y="234" Width="370" Height="0" />
+
+        <Control Id="RecipientLabel" Type="Text" X="25" Y="63" Height="15" Width="100" Transparent="yes" Text="Recipient of reports" />
+        <Control Id="RecipientTextbox" Type="Edit" X="125" Y="60" Height="15" Width="200" Property="RECIPIENTPROPERTY"  />
+
+        <Control Id="SubjectLabel" Type="Text" X="25" Y="83" Height="15" Width="100" Transparent="yes" Text="Subject of report" />
+        <Control Id="SubjectTextbox" Type="Edit" X="125" Y="80" Height="15" Width="200" Property="SUBJECTPROPERTY" />
+
+        <Control Id="CheckboxesHelp" Type="Text" X="25" Y="120" Height="15" Width="300" Transparent="yes" Text="Choose what to do when an e-mail is reported:" />
+        <Control Id="ActionOptions" Type="RadioButtonGroup" X="25" Y="140" Width="300" Height="50" Property="ACTIONPROPERTY" />
+      </Dialog>
+
+      <RadioButtonGroup Property="ACTIONPROPERTY">
+        <RadioButton Text="Just report the e-mail" Value="0" X="5" Y="0" Width="200" Height="15" />
+        <RadioButton Text="Report and move the e-mail to 'Junk' folder" Value="1" X="5" Y="15" Width="200" Height="15" />
+        <RadioButton Text="Report and delete the e-mail" Value="2" X="5" Y="30" Width="200" Height="15" />
+      </RadioButtonGroup>
+    </UI>
+  </Fragment>
+  
+  <Fragment>
+    <Binary Id="CustomActionBinary" SourceFile="$(var.Schillings.SwordPhish.Installer.OptionsCustomAction.TargetDir)$(var.Schillings.SwordPhish.Installer.OptionsCustomAction.TargetName).CA.dll"/>
+    <CustomAction Id="OptionsCustomAction" BinaryKey="CustomActionBinary" DllEntry="SaveOptions" Impersonate="no" />
+  </Fragment>
+</Wix>

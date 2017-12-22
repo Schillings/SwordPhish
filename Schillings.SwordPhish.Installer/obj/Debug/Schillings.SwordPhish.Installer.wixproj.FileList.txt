@@ -1,0 +1,6 @@
+obj\Debug\Product.wixobj
+C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish.Installer\bin\Debug\Schillings.SwordPhish.Installer.msi
+C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish.Installer\bin\Debug\Schillings.SwordPhish.Installer.wixpdb
+obj\Debug\Schillings.SwordPhish.Installer.wixproj.BindContentsFileListnull.txt
+obj\Debug\Schillings.SwordPhish.Installer.wixproj.BindOutputsFileListnull.txt
+obj\Debug\Schillings.SwordPhish.Installer.wixproj.BindBuiltOutputsFileListnull.txt

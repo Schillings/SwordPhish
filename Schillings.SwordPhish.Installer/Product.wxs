@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="*" Name="Schillings SwordPhish" Language="1033" Version="1.5.0.0" Manufacturer="Schillings International LLP" UpgradeCode="6b5dfdc5-f72e-4301-a361-90915bd24781">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <MediaTemplate EmbedCab="yes" />
+
+    <Feature Id="ProductFeature" Title="Schillings SwordPhish" Level="1">
+      <ComponentGroupRef Id="ProductComponents" />
+    </Feature>
+
+    <WixVariable Id="WixUIDialogBmp" Value="dialog.bmp" />
+    <WixVariable Id="WixUIBannerBmp" Value="banner.bmp" />
+
+    <InstallExecuteSequence>
+      <Custom Action="OptionsCustomAction" Before="InstallFinalize">NOT Installed</Custom>
+    </InstallExecuteSequence>
+    
+    <Icon Id="icon.ico" SourceFile="icon.ico"/>
+    <Property Id="ARPPRODUCTICON" Value="icon.ico" />
+
+    <UI>
+      <Property Id="WIXUI_INSTALLDIR" Value="PRODUCTFOLDER" />
+      <UIRef Id="WixUI_InstallDir" />
+
+      <Publish Dialog="WelcomeDlg"
+               Control="Next"
+               Event="NewDialog"
+               Value="OptionsDialog"
+               Order="2">1</Publish>
+
+      <Publish Dialog="InstallDirDlg"
+               Control="Back"
+               Event="NewDialog"
+               Value="OptionsDialog"
+               Order="2">1</Publish>
+    </UI>
+  </Product>
+
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="Schillings">
+          <Directory Id="PRODUCTFOLDER" Name="SwordPhish">
+            <Component Id="CMP_AddIn">
+              <File Id="FILE_AddIn" Source="$(var.Schillings.SwordPhish.TargetPath)" KeyPath="yes" />
+            </Component>
+            <Component Id="CMP_AddInShared">
+              <File Id="FILE_AddInShared" Source="$(var.Schillings.SwordPhish.Shared.TargetPath)" KeyPath="yes" />
+            </Component>
+            <Component Id="CMP_DllManifest">
+              <File Id="FILE_DllManifest" Source="$(var.Schillings.SwordPhish.TargetPath).manifest" KeyPath="yes" />
+            </Component>
+            <Component Id="CMP_VstoManifest">
+              <File Id="FILE_VstoManifest" Source="$(var.Schillings.SwordPhish.TargetDir)$(var.Schillings.SwordPhish.TargetName).vsto" KeyPath="yes" />
+              <RegistryKey Root="HKLM" Key="SOFTWARE\Microsoft\Office\Outlook\Addins\Schillings.SwordPhish">
+                <RegistryValue Name="Description" Value="Schillings SwordPhish" Type="string" Action="write" />
+                <RegistryValue Name="FriendlyName" Value="Schillings SwordPhish" Type="string" Action="write" />
+                <RegistryValue Name="LoadBehavior" Value="3" Type="integer" Action="write" />
+                <RegistryValue Name="Manifest" Value="[#FILE_VstoManifest]|vstolocal" Type="string" Action="write" />
+              </RegistryKey>
+            </Component>
+            <Component Id="CMP_ToolsCommon">
+              <File Id="FILE_ToolsCommon" Source="$(var.Schillings.SwordPhish.TargetDir)Microsoft.Office.Tools.Common.v4.0.Utilities.dll" KeyPath="yes" />
+            </Component>
+            <Component Id="CMP_ToolsOutlook">
+              <File Id="FILE_ToolsOutlook" Source="$(var.Schillings.SwordPhish.TargetDir)Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll" KeyPath="yes" />
+            </Component>
+          </Directory>
+        </Directory>
+      </Directory>
+    </Directory>
+
+    <Property Id="OFFICE2007">
+      <RegistrySearch Id="Office2007_Installed" Root="HKLM" Key="Software\Microsoft\Office\12.0\Outlook\InstallRoot" Name="Path" Type="raw" />
+    </Property>
+
+    <PropertyRef Id="NETFRAMEWORK40CLIENT" />
+    <Condition Message="This tool requires .NET Framework 4.0. Please install the .NET Framework then run this installer again.">
+      <![CDATA[Installed OR NETFRAMEWORK40CLIENT]]>
+    </Condition>
+
+    <Property Id="VSTOR40">
+      <RegistrySearch Id="VSTOR_Installed"
+                      Root="HKLM" Key="SOFTWARE\Microsoft\VSTO Runtime Setup\v4R" Name="VSTORFeature_CLR40" Type="raw" />
+    </Property>
+    <Condition Message="This tool requires the VSTO 4.0 Runtime. Please install the VSTO runtime then run this installer again.">
+      <![CDATA[Installed OR (VSTOR40 OR NOT OFFICE2007)]]>
+    </Condition>
+  </Fragment>
+
+  <Fragment>
+    <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <ComponentRef Id="CMP_AddIn" />
+      <ComponentRef Id="CMP_AddInShared" />
+      <ComponentRef Id="CMP_DllManifest" />
+      <ComponentRef Id="CMP_VstoManifest" />
+      <ComponentRef Id="CMP_ToolsCommon" />
+      <ComponentRef Id="CMP_ToolsOutlook" />
+      <Component Id="CMP_Office2007Hklm" Permanent="yes">
+        <Condition><![CDATA[OFFICE2007]]></Condition>
+        <RegistryKey Root="HKLM" Key="SOFTWARE\Microsoft\Office\12.0\Common\General">
+          <RegistryValue Name="EnableLocalMachineVSTO" Value="1" Type="integer" KeyPath="yes" />
+        </RegistryKey>
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

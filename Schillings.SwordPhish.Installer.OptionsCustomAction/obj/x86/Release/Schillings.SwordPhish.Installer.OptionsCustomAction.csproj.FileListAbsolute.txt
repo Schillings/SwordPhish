@@ -1,0 +1,9 @@
+C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish.Installer.OptionsCustomAction\bin\Release\Schillings.SwordPhish.Installer.OptionsCustomAction.dll
+C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish.Installer.OptionsCustomAction\bin\Release\Schillings.SwordPhish.Installer.OptionsCustomAction.CA.dll
+C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish.Installer.OptionsCustomAction\bin\Release\Schillings.SwordPhish.Installer.OptionsCustomAction.pdb
+C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish.Installer.OptionsCustomAction\bin\Release\Microsoft.Deployment.WindowsInstaller.dll
+C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish.Installer.OptionsCustomAction\bin\Release\Microsoft.Deployment.WindowsInstaller.xml
+C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish.Installer.OptionsCustomAction\obj\x86\Release\Schillings.SwordPhish.Installer.OptionsCustomAction.dll
+C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish.Installer.OptionsCustomAction\obj\x86\Release\Schillings.SwordPhish.Installer.OptionsCustomAction.pdb
+C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish.Installer.OptionsCustomAction\obj\x86\Release\Schillings.SwordPhish.Installer.OptionsCustomAction.csprojResolveAssemblyReference.cache
+C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish.Installer.OptionsCustomAction\obj\x86\Release\Schillings.SwordPhish.Installer.OptionsCustomAction.csproj.CoreCompileInputs.cache

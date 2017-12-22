@@ -1,0 +1,2 @@
+C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish.Installer\bin\Release\Schillings.SwordPhish.Installer.msi
+C:\Users\P\Source\Workspaces\Schillings\SwordPhish\Schillings.SwordPhish.Installer\bin\Release\Schillings.SwordPhish.Installer.wixpdb
