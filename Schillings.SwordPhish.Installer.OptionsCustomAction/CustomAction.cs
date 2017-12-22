@@ -12,8 +12,6 @@ namespace Schillings.SwordPhish.Installer.OptionsCustomAction
         [CustomAction]
         public static ActionResult SaveOptions(Session session)
         {
-            System.Diagnostics.Debugger.Launch();
-
             var recipient = session["RECIPIENTPROPERTY"];
             var subject = session["SUBJECTPROPERTY"];
             var action = session["ACTIONPROPERTY"];
