@@ -23,7 +23,9 @@ If you are so inclined you can build SwordPhish from source. Simply clone this r
 You can deploy SwordPhish as you would any other application: manually, Group Policy, batch file at logon, or your favourite systems management solution.
 
 # Options
-SwordPhish just needs to know where to send reports to. You can set other options via the MSI installer or property flags:
+SwordPhish just needs to know where to send reports to. If you run the GUI installer you will be asked to supply these at installation. 
+
+If you are installing via CMDLINE/GPO you can set other options via the MSI installer or property flags:
 
 Flag | Description
 ---- | -----------
@@ -31,7 +33,7 @@ RECIPIENTPROPERTY | E-mail address where to send SwordPhish reports
 SUBJECTPROPERTY | Subject of SwordPhish reports
 ACTIONPROPERTY | What to do after a user reports an e-mail. 0 = Just send the report, 1 = Report and move the e-mail to "Junk", 2 = Report and delete the e-mail from the user's Inbox.
 
-For example: `msiexec /i Schillings.SwordPhish.Installer.msi RECIPIENTPROPERTY="reports@mysoc.com" ACTIONPROPERTY=2`
+For example: `msiexec /i Schillings.SwordPhish.x86.msi RECIPIENTPROPERTY="reports@mysoc.com" ACTIONPROPERTY=2`
 
 To make your life easier for reporting it is recommended to set the recipient address to a ticketing system.
 
