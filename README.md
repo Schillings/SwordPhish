@@ -15,7 +15,7 @@ The recipient of reports receives the original reported e-mail as an  attachment
 SwordPhish requires Microsoft Office 2007+, .NET Framework 4.0+ and [VTSO 4.0+](https://www.microsoft.com/en-us/download/details.aspx?id=48217) to be installed, and works across all Windows platforms.
 
 # Installation
-The easiest way to install SwordPhish is via the pre-compiled MSI installers under the [Releases tab](https://github.com/Schillings/SwordPhish/releases) - make sure you run as an administrator.
+The easiest way to install SwordPhish is via the pre-compiled MSI installers under the [Releases tab](https://github.com/Schillings/SwordPhish/releases). If you are an End User just run `Schillings SwordPhish.exe`. If you are a SysAdmin then you can use the MSI installers for your platform and push out via GPO.
 
 If you are so inclined you can build SwordPhish from source. Simply clone this repository and compile with Visual Studio 2010+.
 
