@@ -3,11 +3,11 @@
 
 ![SwordPhish](http://g.recordit.co/DEALRp32ml.gif)
 
-SwordPhish is a very simple but effective button that sits within the users Outlook toolbar. One click and the suspicious e-mail is instantly reported and contains all metadata required for investigation.
+SwordPhish is a very simple but effective button that sits within the users Outlook toolbar. One click and the suspicious e-mail is instantly reported to your designated recipient (i.e your internal security team, or SoC) and contains all metadata required for investigation.
 
-**SwordPhish should be underpinned by your security awareness programme**. Suspicious e-mails can't be reported if your users don't know what they are looking for or what to deem suspicious.
+**SwordPhish should be underpinned by a staff security awareness programme.** Suspicious e-mails can't be reported if your users don't know what they are looking for or what is suspicious.
 
-The recipient of reports receives the original reported e-mail as an  attachment along with every header to aid further investigation.
+The recipient of a SwordPhish report receives the original e-mail as an attachment and every header to aid further investigation.
 
 ![SwordPhish Report](https://i.imgur.com/43ZC625.png)
 
